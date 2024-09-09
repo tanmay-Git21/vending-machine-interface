@@ -1,0 +1,60 @@
+.card{
+    
+    border-radius: 5px;
+    padding: 1vw;
+    height: 25vw;
+    min-width: 20vw;
+    background-color: rgb(208, 219, 212);
+    color: black;
+}
+.product-img{
+    height: 55%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-name{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.product-info{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-add{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addButton{
+    height: 2.5vw;
+    width: 5vw;
+    font-size: medium;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color:transparent;
+}
+.addButton:hover{
+    /* border:2px solid blue; */
+    /* color: blue; */
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px black;
+}
