@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100vw;
+    background-color: #242424;
+    color: rgb(215, 211, 211);
+    font-size: larger;
+}
+.WelcomePage{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+   
+}
+.content-container{
+    position: absolute; 
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    
+}
+.ProceedButton{
+    height: 2.5vw;
+    font-size: medium;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color:transparent ;
+}
+.ProceedButton:hover{
+    border:2px solid blue;
+    color: blue;
+    cursor: pointer;
+}
