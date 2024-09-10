@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: center;
 }
+.product-image{
+    width: 8vw;
+
+}
 .product-name{
     height: 15%;
     width: 100%;

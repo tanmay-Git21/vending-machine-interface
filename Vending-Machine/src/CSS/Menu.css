@@ -1,33 +1,193 @@
-.menu-heading-div{
-    font-size: 1.5vw;
+.menu-heading-div {
+    font-size: 15px;
     height: 10%;
+    width: 100%;
     /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10;
+    background-color: black; 
+   
+    
+    /* Add background to avoid overlap issues */
 }
-.menu-product_colletion-div{
-    height: 90%;
-    padding: 10px;
-  
+.menu-page-container{
+    position: relative;
 }
+.menu-heading-div h1{
+    color: orangered;
+    font-size: 3vw;
+}
+
+.shopping-cart{
+    width: 4vw;
+    position: absolute;
+    right: 4vw;
+    height: 4vw;
+    background-color: white;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.shopping-cart:hover{
+    color: white;
+    background-color: orangered;
+    font-size: 2.5vw;
+    
+}
+.items-counter{
+    background-color: blue;
+    position: absolute;
+    
+}
+
+/* .shopping-cart:hover{
+   margin-top: 90px;
+   height:20vw ;
+   width: 20vw;
+   border-radius: 5px;
+   
+} */
+
+.shopping-cart-div{
+    position: fixed;
+    width:30vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    background: rgba(28, 30, 38, 0.5);
+    z-index: 100;
+    top: 0;
+    right: -30vw;
+    padding: 1vw;
+    transition: all 0.3s ease-in;
+
+}
+.closeCart{
+    width:4vw;
+    height: 4vw;
+    /* border: 2px solid black; */
+    background-color: orangered;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1vw;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    
+}
+.closeCart:hover{
+    font-size: 2vw;
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+.updatePopup
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.menu-product_collection-div{
+    position: relative;
+}
+
 .product-section-row{
     width: 100%;
     /* border: 1px solid white; */
     margin-bottom: 1vw;
 }
+/* .emptydiv
+{
+
+} */
 .product-section-name h3{
+
     margin-left: 1vw;
+    
 }
 .product-view-section {
     padding: 1vw;
-    /* border: 1px solid white; */
-    display: flex;   
-    /* flex-direction: column;        Ensure the items are in a row */
-    overflow-x: auto;        /* Enable horizontal scrolling */
-    gap: 1vw;                /* Add spacing between cards (optional) */
-    scroll-snap-type: x mandatory; /* Optional: Smooth scrolling */
-    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
-    scrollbar-width: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 1vw;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+.product-view-section::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.showing-items-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-height: 70%;
+    /* border: 2px solid white; */
+    /* background-color: white; */
+    margin-top: 4vw;
+    padding: 1vw;
+    overflow: auto;
+}
+.totalAmount{
+    width: 100%;
+    height: 10%;
+    /* background-color: white; */
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    
+}
+.cancleProceedDiv{
+    width: 100%;
+    height: 10%;
+    /* background-color: white; */
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cancle{
+    padding: 1vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: none;
+}
+.cancle:hover{
+    background-color: blueviolet;
+    color:white;
+}
+.tobill{
+    padding: 1vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border: none;
+}
+
+.tobill:hover{
+    color: white;
+    background-color: orangered;
+    
 }
