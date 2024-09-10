@@ -44,17 +44,17 @@
     height: 2.5vw;
     width: 5vw;
     font-size: medium;
-    color: black;
-    border: 1px solid black;
+    color: orangered;
+    border: 1px solid orangered;
     border-radius: 3px;
     background-color:transparent;
 }
 .addButton:hover{
     /* border:2px solid blue; */
     /* color: blue; */
-    background-color: black;
+    background-color: orangered;
     color: white;
     transition: all 0.2s ease-in;
     cursor: pointer;
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 2px 1px orangered;
 }

@@ -12,13 +12,15 @@
     padding: 10px;
   
 }
-.waffers-parent-div{
+.product-section-row{
+    width: 100%;
     /* border: 1px solid white; */
+    margin-bottom: 1vw;
 }
-.waffers-heading h3{
+.product-section-name h3{
     margin-left: 1vw;
 }
-.waffers-section {
+.product-view-section {
     padding: 1vw;
     /* border: 1px solid white; */
     display: flex;   
