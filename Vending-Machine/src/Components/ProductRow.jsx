@@ -27,7 +27,7 @@ import pepsi from '../Assets/Beverages/pepsiCan.png';
 import spritCanpng from '../Assets/Beverages/spritCanpng.png';
 import waterBottle from '../Assets/Beverages/waterBottle.png';
 
-const ProductRow = ({ sectionName }) => {
+const ProductRow = ({ sectionName,handleAddItem }) => {
   // Available products for each section
   const ChipsAvail = [
     { imgsrc: laysSalted, name: "Lays Salted", quantity: 10, price: 10 },
@@ -85,7 +85,7 @@ const ProductRow = ({ sectionName }) => {
       </div>
       <div className="product-view-section">
         {productsToDisplay.map((product, index) => (
-          <ProductCard key={index} product={product} />
+          <ProductCard key={index} product={product}  handleAddItem={handleAddItem}/>
         ))}
       </div>
     </div>

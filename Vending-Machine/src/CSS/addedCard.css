@@ -3,4 +3,12 @@
     min-height: 6vw;
     background-color: white;
     border-radius: 5px;
+    padding: 1vw;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addedItemImage{
+    max-width: 3vw;
 }

@@ -1,12 +1,19 @@
-import React from 'react'
-import '../CSS/addedCard.css'
+import React from 'react';
+import '../CSS/addedCard.css';
 
-const AddedCard = () => {
+const AddedCard = ({ item }) => {
   return (
-    <div className='container'>
-        hello
+    <div className="container">
+      <div className="something">
+        <h3>{item.productName}</h3>
+        <p>Price: Rs. {item.productPrice}</p>
+        <p>Quantity: {item.productQuantity}</p>
+      </div>
+      <div className='imageDiv'>
+        <img className='addedItemImage' src={item.productImage}/>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default AddedCard
+export default AddedCard;
