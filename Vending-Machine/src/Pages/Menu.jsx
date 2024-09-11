@@ -51,15 +51,14 @@ function Menu() {
   }
 
 
-const handletoBillButton=()=>{
-  if(addedItems.length === 0){
-    toast.error("Basket is empty nothing to buy")
-  }else if(addedItems.length > 0){
-    
-    navigate2("/billing");
-
-  }
-}
+  const handletoBillButton = () => {
+    if (addedItems.length === 0) {
+      toast.error("Basket is empty, nothing to buy");
+    } else if (addedItems.length > 0) {
+      navigate2("/billing", { state: { addedItems } }); // Pass addedItems as state
+    }
+  };
+  
 
   useEffect(() => {
     console.log(addedItems);

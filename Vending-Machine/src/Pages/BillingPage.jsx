@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import Bill from '../Components/Bill';
 
 const BillingPage = () => {
-  return (
-    <div>BillingPage</div>
-  )
-}
+  const location = useLocation(); 
+  const { addedItems } = location.state || { addedItems: [] }; // Default to empty array if no state passed
 
-export default BillingPage
+  return <Bill addedItems={addedItems} />;
+};
+
+export default BillingPage;
